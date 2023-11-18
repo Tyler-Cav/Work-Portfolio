@@ -4,8 +4,8 @@ THEN I am presented with the developer's name, a recent photo or avatar,
             and links to sections about them, their work, and how to contact them
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I click on the link to the section about their work----------------------------DONE
+THEN the UI scrolls to a section with titled images of the developer's applications-DONE
 WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications
@@ -25,20 +25,18 @@ THEN I am presented with a responsive layout that adapts to my viewport-->
 <!--Creating Header with H1 Heading as my name, placed on the top left of the page. <a href links on the 
 right hand side to lower parts of the page in reference to aboutme, work, contact me, and resume-->
     <header>
-        <h1 id="firstlastname">Tyler Cavanaugh</h1>
+        <h1>Tyler Cavanaugh</h1>
         <nav Class="headerright">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <a href="#aboutme"><strong>About Me |</strong></a>
+            <a href="#work"><strong>Work |</strong></a>
+            <a href="#contactme"><strong>Contact Me |</strong></a>
+            <a href="#resume"><strong>Resume</strong></a>
         </nav>
-<!--Everything Is Fine IMG-->
-        <img src="Assets/EverythingIsFine.jpg"/>
     </header>
     <main>
 <!--ABOUT ME Section-->
-        <section ID="aboutme">
-            <h2>About Me</h2>
+        <section ID="aboutme" class="container">
+            <h2 class="H2">About Me</h2>
              <div>
                 <p>
                     Currently in studies to become a full-stack developer. Previous career was as a 
@@ -52,8 +50,8 @@ right hand side to lower parts of the page in reference to aboutme, work, contac
              </div>
         </section>
 <!--WORK Section-->
-        <section ID="work">
-            <h2>Work</h2>
+        <section ID="work" class="container">
+            <h2 class="H2">Work</h2>
             <div>
                 <a href="https://tyler-cav.github.io/Horiseon-Page/">Horiseon Refactored Webpage</a>
                 <br>
@@ -65,16 +63,17 @@ right hand side to lower parts of the page in reference to aboutme, work, contac
             </div>
         </section>
 <!--Contact Me Section-->
-        <section ID="contactme">
-            <h2>Contact Me</h2>
-                <nav>
-                    <a href="https://github.com/"><img src="Assets/GitHub_Logo.png"/></a>
+        <section ID="contactme" class="container">
+            <h2 class="H2">Contact Me</h2>
+                <nav class="contact-me-assets"> <!--ASK why do I have to use Diplay: Flex
+                                                   in contact-me-assets if it's already in the container class in the section? -->
+                    <a href="https://github.com/"><img id="github" src="Assets/GitHub_Logo.png"/></a>
                     <a href="mailto:tyler.cavanaugh24@gmail.com">Contact Email</a>
                 </nav>
         </section>
 <!--Resume Section-->
-        <section ID="resume">
-            <h2>Resume</h2>
+        <section ID="resume" class="container">
+            <h2 class="H2">Resume</h2>
 
         </section>
     </main>
