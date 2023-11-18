@@ -29,32 +29,28 @@ header a {
     margin-top: 5%;
 }
 /*<h2> content */
-.H2{
-    border-right: 1px solid black;
-    padding: 5px;
-    width: 200px
+H2 {
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    margin: 0%;
+    justify-content: center;
 }
 
-
-
-
-
-
+/*AboutMe, Work, Contact Me, and Resume Information */
+.section-info-assets {
+    display: flex;
+    border-left: 2px solid black;;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /*Contact Me Section*/
 
 #github {
     width: 20%;
 }
-
-
-
-.contact-me-assets {
-    display: flex;
-    border: 2px solid black;;
-    align-items: center;
-}
-
 
 .class {
     background-image: url("");
