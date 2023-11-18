@@ -1,0 +1,85 @@
+<!--GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, 
+            and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler Cavanaugh Portfolio</title>
+    <link rel="Stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+<!--Creating Header with H1 Heading as my name, placed on the top left of the page. <a href links on the 
+right hand side to lower parts of the page in reference to aboutme, work, contact me, and resume-->
+    <header>
+        <h1 id="firstlastname">Tyler Cavanaugh</h1>
+        <nav Class="headerright">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </nav>
+<!--Everything Is Fine IMG-->
+        <img src="Assets/EverythingIsFine.jpg"/>
+    </header>
+    <main>
+<!--ABOUT ME Section-->
+        <section ID="aboutme">
+            <h2>About Me</h2>
+             <div>
+                <p>
+                    Currently in studies to become a full-stack developer. Previous career was 
+                    product buyer for a large digital retailer.
+                </p>
+                <p>
+                    Personal hobbies include baking/cooking, graphic design, building computers
+                    or mechanical keyboard, photography, and Music.
+                </p>
+                
+             </div>
+        </section>
+<!--WORK Section-->
+        <section ID="work">
+            <h2>Work</h2>
+            <div>
+                <a href="https://tyler-cav.github.io/Horiseon-Page/">Horiseon Refactored Webpage</a>
+                <br>
+                <a href="In Development">In Development</a> INSERT TOOLS IMAGE
+                <br>
+                <a href="In Development">In Development</a> INSERT TOOLS IMAGE
+                <!--Make the image the background image
+                Make an anchor tag.-->
+            </div>
+        </section>
+<!--Contact Me Section-->
+        <section ID="contactme">
+            <h2>Contact Me</h2>
+
+            <div>
+
+            </div>
+        </section>
+<!--Resume Section-->
+        <section ID="resume">
+            <h2>Resume</h2>
+            <div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
