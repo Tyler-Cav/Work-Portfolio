@@ -54,7 +54,7 @@ h2 {
 /*AboutMe, Work, Contact Me, and Resume Information */
 .section-info-assets {
     width: 100%;
-    border-left: 5px solid black;;
+    border-left: 5px solid black;
     flex-wrap: wrap;
     justify-content: center; 
     margin-left: 100px;
@@ -84,7 +84,7 @@ h2 {
     display: flex;
     opacity: 100%;
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
-    font-size: 1em;
+
 }
 
 #HoriseonImage {
@@ -118,34 +118,31 @@ h2 {
 }
 
 /*when screen shrinks for desktop and for mobile devices*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1419px) {
     header { 
-        width: 100%;
         flex-direction: column;
         height: 9em;
-        font-size: .5em;
-        justify-content: space-evenly
+        font-size: 1em;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1419px) {
     section { 
         display: flex;
         flex-direction: column;
         flex-basis: 10%;
-        flex-wrap: wrap;
-        margin: 0;
-        justify-content: flex-start;
-        align-items: flex-start;
+        margin-left: 1em
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1419px) {
     .links a { 
-        width: 6em;
-        height: 7em;
+        width: 15em;
+        height: 15em;
         font-size: .1;
-        border: .2em solid black;
+        border: .3em solid black;
         justify-content: center;
     }
 }
