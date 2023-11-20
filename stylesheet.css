@@ -1,54 +1,77 @@
 /*Universal Selector Font Segoe with 0 margin and padding slightly to the left*/
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 0;
+    margin: 0;
     padding: 0;
-}
+    }
 
 /*Header Section*/
+
+h1 {
+    font-size: 5em;
+}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;;
-    height: 5em;
-    background: grey;
+    background-color: #3c8192;
+    width: 103%;
+    height: 12em;
     color: white;;
-    
+    padding: .5em;
 }
-
+/*Navigation Header Edits*/
 header a {
     color: white;
     text-decoration: none;
     font-size: 2em;
-    padding: .5em
+    padding: .5em;
+    margin-right: 2em;
 }
+
 /*Hover over page nav section*/
 header a:hover {
     color: black;
     text-shadow: 0 0 10px #0e657b
 }
 
+/*message under header*/
+#underheader {
+    margin:0;
+    display: flex;
+    width:100%;
+    background-size: 150%;
+    border: 1px solid black;
+    background-image: url(Assets/Full\ Background.png);
+}
 /*Flex Containers for Main Sections*/
 .container {
     display: flex;
     margin-left: 10em
 }
 
+/*Aligning content on the main and cross axis*/
 .flex-start {
     justify-content: space-evenly;
     align-items: center;
 }
-/*<h2> content */
+/*Heading 2 content */
 h2 {
     padding: 20px;
     margin-top: 5%;
-    color: #0e657b;
+    color: #3c8192;
     flex-basis: 20%;
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 5em;
 
+}
+/*Paragraph Tag Content*/
+p {
+    display: flex;
+    font-size: 3em;
+    padding-left: 2em;
+    justify-content: center;
 }
 
 /*AboutMe, Work, Contact Me, and Resume Information */
@@ -61,7 +84,7 @@ h2 {
     margin-top: 5%;
 }
 
-/*Work Section*/
+/*Work Section for clickable link imgaes*/
 .links a{
     display: flex;
     background-color: #0e657b;
@@ -76,51 +99,55 @@ h2 {
     align-items: center;
     opacity: 70%;;
     margin: 1%;
-
-
 }
 
+/*Mouse Hover content sectino for the Work content*/
 .links a:hover {
     display: flex;
     opacity: 100%;
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
 
 }
-
+/*Horiseon image for the work portfolio section*/
 #HoriseonImage {
     background-image: url(Assets/Horiseon-page.PNG);
     background-size: 120%;
     text-decoration: none;
 }
-
+/*In development images, replace with future deployed content*/
 #indevelopment {
     background-image: url(Assets/Gear-cogs.PNG);
     background-size: 200%;
+    width: 400px;
+    height: 400px;
     background-position: center;
-    text-decoration: none
+    text-decoration: none;
 }
 
 /*Contact Me Section*/
 
+/*Updating image size of the github content*/
 #github {
     width: 14em
 }
-
+/*Increasing Contact Email Text*/
 #contactemailtextsize {
     font-size: 4em;
     text-decoration: none;
     color: black;
 }
 
+/*Updating the hover options for the Contact Email link*/
 #contactemailtextsize:hover {
     text-decoration: underline;
     font-style:oblique
 }
 
 /*when screen shrinks for desktop and for mobile devices*/
-@media screen and (max-width: 1419px) {
-    header { 
+@media screen and (max-width: 1200px) {
+    header, p {
         flex-direction: column;
+        width: 110%;
         height: 9em;
         font-size: 1em;
         justify-content: center;
@@ -128,21 +155,27 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1419px) {
+@media screen and (max-width: 1200px) {
     section { 
         display: flex;
         flex-direction: column;
         flex-basis: 10%;
-        margin-left: 1em
+        margin-top: 5px;
     }
 }
 
-@media screen and (max-width: 1419px) {
+@media screen and (max-width: 1200px) {
     .links a { 
         width: 15em;
         height: 15em;
         font-size: .1;
         border: .3em solid black;
         justify-content: center;
+    }
+}
+@media screen and (max-width: 1200px) {
+    p {
+        font-size: 4em;
+        margin-top: 0em;
     }
 }
