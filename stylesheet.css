@@ -71,12 +71,12 @@ h2 {
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
     border-radius: 6%;
     color:black;
-    text-decoration: none;
-    font-size: large;
-    justify-content: center;
+    font-size: larger;
+    justify-content: flex-start;
     align-items: center;
     opacity: 70%;;
-    margin: 1%
+    margin: 1%;
+
 
 }
 
@@ -84,8 +84,21 @@ h2 {
     display: flex;
     opacity: 100%;
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
+    font-size: 1em;
 }
 
+#HoriseonImage {
+    background-image: url(Assets/Horiseon-page.PNG);
+    background-size: 120%;
+    text-decoration: none;
+}
+
+#indevelopment {
+    background-image: url(Assets/Gear-cogs.PNG);
+    background-size: 200%;
+    background-position: center;
+    text-decoration: none
+}
 
 /*Contact Me Section*/
 
