@@ -1,7 +1,7 @@
 /*Universal Selector Font Segoe with 0 margin and padding slightly to the left*/
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+    margin-left: 0;
     padding: 0;
 }
 
@@ -11,15 +11,17 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;;
+    height: 5em;
     background: grey;
-    color: white;
-    padding-bottom: 2%;
+    color: white;;
     
 }
 
 header a {
     color: white;
     text-decoration: none;
+    font-size: 2em;
+    padding: .5em
 }
 /*Hover over page nav section*/
 header a:hover {
@@ -30,6 +32,7 @@ header a:hover {
 /*Flex Containers for Main Sections*/
 .container {
     display: flex;
+    margin-left: 10em
 }
 
 .flex-start {
@@ -44,7 +47,7 @@ h2 {
     flex-basis: 20%;
     flex-grow: 0;
     flex-shrink: 0;
-    font-size: 5em
+    font-size: 5em;
 
 }
 
@@ -62,9 +65,9 @@ h2 {
 .links a{
     display: flex;
     background-color: #0e657b;
-    width: 350px;
-    height: 350px;
-    border: 3px solid black;
+    width: 35em;
+    height: 35em;
+    border: .8em solid black;
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
     border-radius: 6%;
     color:black;
@@ -81,14 +84,13 @@ h2 {
     display: flex;
     opacity: 100%;
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
-    font-size: 1.5em;
 }
 
 
 /*Contact Me Section*/
 
 #github {
-    width: 10em
+    width: 14em
 }
 
 #contactemailtextsize {
@@ -96,8 +98,10 @@ h2 {
     text-decoration: none;
     color: black;
 }
-.class {
-    background-image: url("");
+
+#contactemailtextsize:hover {
+    text-decoration: underline;
+    font-style:oblique
 }
 
 /*when screen shrinks for desktop and for mobile devices*/
@@ -105,6 +109,9 @@ h2 {
     header { 
         width: 100%;
         flex-direction: column;
+        height: 9em;
+        font-size: .5em;
+        justify-content: space-evenly
     }
 }
 
@@ -113,5 +120,19 @@ h2 {
         display: flex;
         flex-direction: column;
         flex-basis: 10%;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .links a { 
+        width: 6em;
+        height: 7em;
+        font-size: .1;
+        border: .2em solid black;
+        justify-content: center;
     }
 }
