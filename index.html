@@ -26,55 +26,55 @@ THEN I am presented with a responsive layout that adapts to my viewport-->
 right hand side to lower parts of the page in reference to aboutme, work, contact me, and resume-->
     <header>
         <h1>Tyler Cavanaugh</h1>
-        <nav Class="headerright">
-            <a href="#aboutme"><strong>About Me |</strong></a>
-            <a href="#work"><strong>Work |</strong></a>
-            <a href="#contactme"><strong>Contact Me |</strong></a>
-            <a href="#resume"><strong>Resume</strong></a>
+        <nav>
+            <a href="#aboutme"><strong>About Me</strong></a> |
+            <a href="#work"><strong>Work</strong></a> |
+            <a href="#contactme"><strong>Contact Me</strong></a> |
+            <a href="#resume"><strong>Resume</strong></a> 
         </nav>
     </header>
     <main>
 <!--ABOUT ME Section-->
-        <section ID="aboutme" class="container">
-            <h2 class="H2">About Me</h2>
-             <div>
+        <section ID="aboutme" class="container flex-start">
+            <h2>About Me</h2>
+             <article class="container section-info-assets">
                 <p>
                     Currently in studies to become a full-stack developer. Previous career was as a 
-                    product buyer for a large digital retailer.
+                    product buyer for a large digital retailer. 
                 </p>
                 <p>
                     Personal hobbies include coding, baking/cooking, graphic design, building computers
                     or mechanical keyboard, photography, and Music.
                 </p>
                 
-             </div>
+             </article>
         </section>
 <!--WORK Section-->
-        <section ID="work" class="container">
-            <h2 class="H2">Work</h2>
-            <div>
+        <section ID="work" class="container flex-start">
+            <h2>Work</h2>
+            <nav class="container section-info-assets links" >
                 <a href="https://tyler-cav.github.io/Horiseon-Page/">Horiseon Refactored Webpage</a>
                 <br>
-                <a href="In Development">In Development</a> INSERT TOOLS IMAGE
+                <a href="In Development">In Development</a> 
                 <br>
-                <a href="In Development">In Development</a> INSERT TOOLS IMAGE
+                <a href="In Development">In Development</a> 
                 <!--Make the image the background image
                 Make an anchor tag.-->
-            </div>
+            </nav>
         </section>
 <!--Contact Me Section-->
-        <section ID="contactme" class="container">
-            <h2 class="H2">Contact Me</h2>
-                <nav class="contact-me-assets"> <!--ASK why do I have to use Diplay: Flex
-                                                   in contact-me-assets if it's already in the container class in the section? -->
+        <section ID="contactme" class="container flex-start">
+            <h2>Contact Me</h2> 
+                <!-- Using containers within containers?-->
+                <nav class="container section-info-assets"> 
                     <a href="https://github.com/"><img id="github" src="Assets/GitHub_Logo.png"/></a>
-                    <a href="mailto:tyler.cavanaugh24@gmail.com">Contact Email</a>
+                    <a id="contactemailtextsize" href="mailto:tyler.cavanaugh24@gmail.com">Contact Email</a>
                 </nav>
         </section>
 <!--Resume Section-->
-        <section ID="resume" class="container">
-            <h2 class="H2">Resume</h2>
-
+        <section ID="resume" class="container flex-start">
+            <h2>Resume</h2>
+            <a class="section-info-assets" href="fakelink">Lorem ipsum dolor sit amet, consectetur </a>
         </section>
     </main>
 </body>
