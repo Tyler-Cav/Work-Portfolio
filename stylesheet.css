@@ -3,6 +3,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
     }
 
 /*Header Section*/
@@ -35,19 +36,9 @@ header a:hover {
     text-shadow: 0 0 10px #0e657b
 }
 
-/*message under header*/
-#underheader {
-    margin:0;
-    display: flex;
-    width:100%;
-    background-size: 150%;
-    border: 1px solid black;
-    background-image: url(Assets/Full\ Background.png);
-}
 /*Flex Containers for Main Sections*/
 .container {
     display: flex;
-    margin-left: 10em
 }
 
 /*Aligning content on the main and cross axis*/
@@ -64,7 +55,6 @@ h2 {
     flex-grow: 0;
     flex-shrink: 0;
     font-size: 5em;
-
 }
 /*Paragraph Tag Content*/
 p {
@@ -72,6 +62,7 @@ p {
     font-size: 3em;
     padding-left: 2em;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*AboutMe, Work, Contact Me, and Resume Information */
@@ -88,8 +79,8 @@ p {
 .links a{
     display: flex;
     background-color: #0e657b;
-    width: 35em;
-    height: 35em;
+    width: 20em;
+    height: 20em;
     border: .8em solid black;
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
     border-radius: 6%;
@@ -108,6 +99,11 @@ p {
     box-shadow: .5em .5em .5em rgb(72, 70, 70);
 
 }
+
+.links a:first-child {
+    width: 23em;
+    height: 23em;
+}
 /*Horiseon image for the work portfolio section*/
 #HoriseonImage {
     background-image: url(Assets/Horiseon-page.PNG);
@@ -118,8 +114,6 @@ p {
 #indevelopment {
     background-image: url(Assets/Gear-cogs.PNG);
     background-size: 200%;
-    width: 400px;
-    height: 400px;
     background-position: center;
     text-decoration: none;
 }
@@ -144,38 +138,39 @@ p {
 }
 
 /*when screen shrinks for desktop and for mobile devices*/
-@media screen and (max-width: 1200px) {
-    header, p {
+@media screen and (max-width: 500px) {
+    header {
         flex-direction: column;
-        width: 110%;
-        height: 9em;
-        font-size: 1em;
+        width: 100%;
+        height: 14em;
+        font-size: .5em;
         justify-content: center;
         align-items: center;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    section { 
+    } section { 
         display: flex;
         flex-direction: column;
         flex-basis: 10%;
         margin-top: 5px;
-    }
+        flex-wrap: wrap
+}   section h2 {
+    font-size: 2em;
+    justify-content: flex-start;
+}   .section-info-assets {
+    border: none
+}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
     .links a { 
-        width: 15em;
-        height: 15em;
-        font-size: .1;
+        width: 7em;
+        height: 7em;
+        font-size: 1em;
         border: .3em solid black;
         justify-content: center;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
     p {
-        font-size: 4em;
-        margin-top: 0em;
+        font-size: 1em;
     }
 }
