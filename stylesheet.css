@@ -36,6 +36,14 @@ header a:hover {
     text-shadow: 0 0 10px #0e657b
 }
 
+#ProfilePic {
+    height: 200px;
+    width: 200px;
+    border-radius: 6%;
+    flex-wrap: wrap;
+        
+}
+
 /*Flex Containers for Main Sections*/
 .container {
     display: flex;
@@ -109,6 +117,9 @@ p {
     background-image: url(Assets/Horiseon-page.PNG);
     background-size: 120%;
     text-decoration: none;
+    color: white;
+    align-items: flex-start;
+    font-size: 20px
 }
 /*In development images, replace with future deployed content*/
 #indevelopment {
@@ -138,38 +149,86 @@ p {
 }
 
 /*when screen shrinks for desktop and for mobile devices*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1146px) {
     header {
         flex-direction: column;
         width: 100%;
-        height: 14em;
-        font-size: .5em;
+        height: 40em;
+        font-size: .9em;
         justify-content: center;
         align-items: center;
-    } section { 
+    } 
+    header nav {
+        margin-top: 5%;
+        height: 20%;
+    }
+    header #ProfilePic {
+        height: 15em;
+        width: 15em;
+    }
+    section { 
         display: flex;
         flex-direction: column;
         flex-basis: 10%;
         margin-top: 5px;
-        flex-wrap: wrap
-}   section h2 {
-    font-size: 2em;
-    justify-content: flex-start;
-}   .section-info-assets {
-    border: none
-}
-}
-
-@media screen and (max-width: 500px) {
+        padding: 0;
+    }   
+    section h2 {
+        font-size: 2em;
+        justify-content: flex-start;
+    }   
+    .section-info-assets {
+        border: none        
+    }   
     .links a { 
         width: 7em;
         height: 7em;
         font-size: 1em;
         border: .3em solid black;
         justify-content: center;
+    }   
+    p {
+        font-size: 1em;
     }
 }
+
 @media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        width: 100%;
+        height: em;
+        font-size: .4em;
+        justify-content: center;
+        align-items: center;
+    } 
+    section { 
+        display: flex;
+        flex-direction: column;
+        flex-basis: 10%;
+        margin-top: 5px;
+        padding: 0;
+    }   
+    section h2 {
+        font-size: 2em;
+        justify-content: flex-start;
+    }   
+    .section-info-assets {
+        border: none
+    } #ProfilePic {
+        height: 55px;
+        width: 55px;
+    }   
+    .links a { 
+        width: 7em;
+        height: 7em;
+        font-size: 1em;
+        border: .3em solid black;
+        margin-right: 110px;
+        justify-content: center;
+    }   
+    #HoriseonImage {
+        background-size: 120%;
+    }
     p {
         font-size: 1em;
     }
